@@ -130,7 +130,7 @@ modelNAD <- kruskal.test (AllDistNADpriority ~ Handedness, data = Nessie)
 modelNAD
 
 ##Figure 2
-boxplot (AllDistNADpriority ~ Handedness, data=Nessie, range=0, ylab= "Reported Nearest Approach Distance (m)")
+boxplot (AllDistNADpriority ~ Handedness, data=Nessie, ylab= "Reported Nearest Approach Distance (m)", cex=0)
 set.seed (101)
 points (jitter(ifelse (Nessie$Handedness=="1st",1,2), amount=0.05), Nessie$AllDistNADpriority, pch=20, cex=0.8)
 
